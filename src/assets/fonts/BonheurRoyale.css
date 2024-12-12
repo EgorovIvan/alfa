@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Bonheur Royale';
+    src: local('Bonheur Royale Regular'), local('Bonheur-Royale-Regular'),
+        url('BonheurRoyale/BonheurRoyale-Regular.woff2') format('woff2'),
+        url('BonheurRoyale/BonheurRoyale-Regular.woff') format('woff'),
+        url('BonheurRoyale/BonheurRoyale-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

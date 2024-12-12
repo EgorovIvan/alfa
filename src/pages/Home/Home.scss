@@ -1,0 +1,71 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  max-width: 120rem;
+  width: 120rem;
+  min-height: 100vh;
+  background: url('../../assets/images/main-bg.webp') no-repeat center;
+  background-size: cover;
+
+  .container {
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+
+    &__content {
+      flex: 1;
+    }
+
+    h1 {
+      color: #A52A2A;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: #A52A2A;
+      font-family: 'StudioScriptCTT', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e65b50;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-background {
+    background-image: url('/images/home-mobile.jpg');
+  }
+
+  .container {
+    padding: 0 1.5rem;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
