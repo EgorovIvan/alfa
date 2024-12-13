@@ -32,6 +32,7 @@ const Pagination: React.FC<PaginationProps> = ({ totalItems, itemsPerPage, curre
         }
     };
 
+    /** Расчет и рендер пагинации */
     const renderPageNumbers = () => {
         const visiblePages = 3; // Количество центральных страниц
         const pageNumbers: React.ReactNode[] = [];

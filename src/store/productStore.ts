@@ -34,11 +34,31 @@ interface ProductStoreActions {
      * @returns Найденные и установленные в стейт записи
      */
     loadProducts: (limit: number, skip: number) => Promise<void>;
+    /**
+     * Функция создания/добавления продукта
+     * @param newProduct - новый продукт
+     */
     addProduct: (newProduct: Product) => void;
-    searchProducts: (query: string) => void; // Поиск/фильтрация
-    onAddToFavorites: (id: number) => void; // Добавление/удаление лайка
-    deleteProduct: (id: number) => void; // Удаление товара
-    getProductById: (id: number) => Product | undefined; // Получение продукта по id
+    /**
+     * Функция поиска продукта по наименовании и описании
+     * @param query - строка для поиска
+     */
+    searchProducts: (query: string) => void;
+    /**
+     * Функция добавления/удаления продукта в избранное
+     * @param id - идентификатор продукта
+     */
+    onAddToFavorites: (id: number) => void;
+    /**
+     * Функция удаления продукта
+     * @param id - идентификатор продукта
+     */
+    deleteProduct: (id: number) => void;
+    /**
+     * Функция получения продукта по id
+     * @param id - идентификатор продукта
+     */
+    getProductById: (id: number) => Product | undefined;
 }
 
 const useProductStore = create<ProductStoreState & ProductStoreActions>()(
